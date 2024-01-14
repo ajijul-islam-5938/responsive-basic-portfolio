@@ -1,0 +1,533 @@
+/* --------------default style--------------- */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Sans-Serif;
+}
+.text-primary{
+   color: #FD6E0A;
+}
+p{
+   color: rgba(0,0,0,0.8);
+   
+}
+/* --------------Header style--------------- */
+
+header{
+   max-width: 1320px;
+   height: 100%;
+   margin: auto;
+   background: url(../images/header_bg.png),url(../images/developer.png),#FFF8F3;
+   background-position: right bottom, left bottom ;
+   background-repeat: no-repeat;
+   background-size: contain;
+   padding-top: 20px;
+}
+nav{
+   width: 95%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between ;
+   align-items: center;
+   
+}
+nav #check{
+   display: none;
+}
+nav label{
+   display: none;
+   font-size: 25px;
+}
+.menu{
+   position: relative;
+}
+.menu ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:50px;
+   list-style: none;
+}
+.menu ul li button{
+   border: none;
+   outline: none;
+   padding: 10px 20px;
+   background: #FD6E0A;
+   color: #fff;
+   font-weight: 700;
+   border-radius: 8px;
+}
+.menu a{
+   text-decoration: none;
+   color: rgba(0,0,0,0.8);
+}
+
+#check:checked ~ .menu{
+   display: block;
+}
+.menu label{
+   color: #fff;
+   font-size: 30px;
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   font-weight: 800;
+}
+.menu ul li button{
+   
+}
+
+/* ------ Banner Designs -------*/
+.banner{
+   width:95%;
+   margin: auto;
+}
+.banner .container{
+   width: 100%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.banner-texts{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 25px;
+}
+.banner-texts h1{
+   font-size: 48px;
+}
+.banner-texts h2{
+}
+.banner-texts p{
+   font-size: 15px;
+}
+.banner-btns{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+.banner-texts button{
+   border: none;
+   outline: none;
+   padding: 15px 20px;
+   background: #FD6E0A;
+   color: #fff;
+   font-weight: 700;
+   border-radius: 8px;
+   display: flex;
+   gap: 5px;
+   border: 2px solid #FD6E0A ;
+}
+.banner-btns button:last-child{
+   background: transparent;
+   border: 2px solid #FD6E0A ;
+   color: #FD6E0A;
+}
+.banner-img img{
+   width: 100%;
+}
+
+/* --------------About section style--------------- */
+.about{
+   max-width: 1320px;
+   margin:50px 0px;
+   padding: 50px 0px;
+   background: #FFF8F3;
+}
+.about .container{
+   width: 95%;
+   margin: auto;
+   
+}
+.about-desc{
+   text-align: center;
+   padding: 60px 0px;
+}
+.about-desc h1{
+   font-size: 35px;
+   margin: 30px 0px;
+}
+.about-desc p{
+   font-size: 14px;
+}
+.about-info{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 20px;
+}
+.about-info p{
+   font-size: 15px;
+}
+.about-info >div{
+   overflow: hidden;
+   padding: 10px 5px;
+   text-align: center;
+   background: #fff;
+   padding: 20px 30px;
+   border-radius: 10px;
+}
+
+
+/* --------------What i do section style--------------- */
+
+.work{
+   max-width: 1320px;
+   margin:40px auto;
+   background: #FFF8F3;
+   padding: 50px 0px;
+   display: ;
+}
+.work .container{
+   width: 95%;
+   margin: auto;
+}
+.work-texts{
+   text-align: center;
+   margin: 50px 0px;
+}
+.work-texts h1{
+   padding: 30px 0px;
+   font-size: 30px;
+}
+.work-texts p{
+   font-size: 14px;
+}
+.work-cards{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 50px;
+   margin: 50px 0px;
+}
+.work-cards .card{
+   background: #fff;
+   border-radius: 8px;
+   box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+   padding:30px ;
+}
+.work-cards .card h3{
+   margin: 10px 0px;
+}
+.work-cards .card p{
+   font-size: 14px;
+}
+
+/* ----------Resume section Designs -----------*/
+
+.resume{
+   max-width: 1320px;
+   margin: 50px auto;
+}
+.resume .container{
+   width: 95%;
+   margin: auto;
+}
+.resume .container > h1{
+   text-align: center;
+   margin: 70px 0px;
+   font-size: 30px;
+}
+.resume-details{
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   align-items: center;
+   gap: 50px;
+}
+.resume-details > div > h2{
+   margin: 30px 0px;
+   color: rgba(0,0,0,0.8);
+   padding-left: 10px;
+}
+.resume-box p{
+   font-size: 14px;
+}
+.resume-box{
+   margin: 15px 0px;
+   padding: 10px;
+}
+.resume-box hr{
+   width:80%;
+   height: 3px;
+   margin: 15px auto;
+   background: gray;
+}
+.resume-box h2{
+   color: rgba(0,0,0,0.8);
+}
+.resume-box h3{
+   margin: 10px 0px;
+   color: rgba(0,0,0,0.7);
+}
+.resume button{
+   border: none;
+   outline: none;
+   padding: 15px 20px;
+   background: #FD6E0A;
+   color: #fff;
+   font-weight: 700;
+   border-radius: 8px;
+   display: flex;
+   gap: 5px;
+   border: 2px solid #FD6E0A ;
+   margin: 20px auto;
+   font-size: 16px;
+}
+
+/* ----------Footer section Designs -----------*/
+
+footer{
+   max-width: 1320px;
+   margin: 50px auto 0px auto;
+   background: #FFF8F3;
+   padding: 50px 0px;
+}
+footer .container{
+   width: 95%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+   row-gap: 50px;
+}
+.footer-desc{
+   text-align: center;
+}
+.footer-desc h1{
+   font-size: 25px;
+}
+.footer-desc p{
+   margin: 30px 0px;
+}
+.footer-desc .icon{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   align-items: center;
+   margin: 0;
+}
+.footer-form h1{
+   text-align: center;
+   margin: 30px 0px;
+   font-size: 25px;
+}
+.footer-form form{
+   width: 95%;
+   margin: auto;
+}
+.footer-form input[type="text"] ,
+.footer-form input[type="email"]
+{
+   width: 100%;
+   padding: 15px 20px;
+   border: none;
+   outline: none;
+   margin: 5px 0px;
+   border-radius: 10px;
+}
+.footer-form textarea{
+   width: 100%;
+   height: 150px;
+   border: none;
+   outline: none;
+   margin: 5px 0px;
+   border-radius: 10px;
+   padding: 15px 20px;
+}
+
+.footer-form input[type="submit"]{
+   border: none;
+   outline: none;
+   padding: 15px 30px;
+   background: #FD6E0A;
+   color: #fff;
+   font-weight: 700;
+   border-radius: 8px;
+}
+.footer >p{
+   text-align: center;
+   margin-top: 80px;
+}
+/* ----------Responsive Designs -----------*/
+/* -Responsive For Small screen-*/
+
+
+@media(max-width:576px){
+   
+   /* -Responsive Nav menu-*/
+   nav{
+      width: 95%;
+      margin: auto;
+   }
+   nav label{
+      display: block;
+   }
+   .menu{
+       background: rgba(0,0,0,0.5);
+       width: 70%;
+       height: 100vh;
+       position: fixed;
+       top: 0;
+       right: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       display: none;
+   }
+    .menu ul{
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       gap: 9px;
+       flex-direction:column;
+       text-align: center;
+    }
+    .menu ul li a{
+       color: #fff;
+       font-weight: 700;
+    }
+    .menu ul li:first-child,
+    .menu ul li:nth-child(2)
+    {
+       width: 100%;
+       border-bottom:1px solid rgba(255,255,255,0.5);
+       padding: 15px 70px;
+       text-align: center;
+       
+    }
+    .menu ul li:last-child button{
+       padding: 20px 40px;
+       font-size: 18px;
+       margin-top: 20px;
+    }
+    
+   /* -Responsive Banner Section-*/
+   .banner{
+      margin: 50px auto;
+      padding: 50px 0px;
+   }
+   .banner .container{
+      width: 95%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly ;
+      align-items: center;
+      gap: 50px;
+   }
+   .banner-texts h1{
+      line-height: 0;
+      font-size: 30px;
+   }
+   .banner-texts h2{
+      font-size: 16px;
+   }
+   
+   /* -Responsive About Section-*/
+   
+   .about{
+      max-width: 1320px;
+      margin: auto;
+   }
+   .about .container{
+      width: 95%;
+   }
+   .about-info{
+      grid-template-columns: repeat(1,1fr);
+      row-gap: 10px;
+   }
+   
+   /* -Responsive work cards Section-*/
+   
+   .work-cards{
+      grid-template-columns: repeat(1,1fr);
+   }
+}
+
+/* ---------Responsive for medium screen---------- */
+@media screen and (min-width:576px) , @media screen and (max-width:768px){
+   
+   /*--Responsive About info Section--*/
+   .about .container{
+      width: 95%;
+      margin: auto;
+   }
+   .about-info{
+      grid-template-columns: repeat(2,1fr);
+   }
+   
+   /*---Responsive Work cards Section---*/
+   .work-cards{
+      grid-template-columns: repeat(2,1fr);
+   }
+   .work-cards .card{
+      
+   }
+   .work-cards .card img{
+      
+   }
+   
+   footer .container{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+   }
+   .footer-desc{
+      text-align: left;
+   }
+   .footer-desc p{
+      font-size: 14px;
+      
+   }
+   .footer-desc .copy{
+      font-size: 13px;
+      margin: 0;
+   }
+   .footer-desc .icon{
+      margin: 0;
+   }
+   .footer > p{
+      font-size: 13px;
+      text-align: center;
+      margin-top: 80px;
+   }
+}
+
+@media(min-width:769px), @media(max-width:992px){
+   .about-info{
+      grid-template-columns: repeat(2,1fr);
+   }
+   .about-info h4{
+      font-size: 15px;
+   }
+   .about-info p{
+      font-size: 14px;
+   }
+   
+   .work-cards{
+      grid-template-columns: repeat(2,1fr);
+   }
+   
+   .resume-details{
+      flex-direction: row;
+   }
+   .resume .container h1{
+      font-size: 60px;
+   }
+}
+
+@media(min-width:992px){
+   .about-info{
+      grid-template-columns: repeat(4,1fr);
+   }
+   
+   .work-cards{
+      grid-template-columns: repeat(4,1fr);
+   }
+}
